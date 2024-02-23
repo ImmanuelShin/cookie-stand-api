@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mx-auto max-w-md p-6 bg-gray-900 rounded-lg shadow-lg mt-8">
+  <div class="bg-white p-6 rounded-lg">
+
+    <h1 class="text-3xl font-bold mb-4">Delete Stand</h1>
+    
+    <form method="POST">
+      {% csrf_token %}
+      <p class="text-gray-700 dark:text-gray-800">Do you really want to delete the {{ cookie_stand.location }} stand?</p>
+
+      <div class="mt-6">
+        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring focus:border-blue-300">
+          Confirm Delete
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+{% endblock content %}
