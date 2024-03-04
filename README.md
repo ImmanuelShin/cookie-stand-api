@@ -38,3 +38,11 @@ A small web project that ties together Django and DRF to create a front facing w
   ```
   6. Run server with `python manage.py runserver`
   7. Visit webpage at 127.0.0.1:8000
+
+### Deployment
+
+The backend of the Cookie Stand project is deployed on Vercel and can be accessed at the following URL:
+
+[Cookie Stand API - Vercel Deployment](https://cookie-stand-api-is.vercel.app/)
+
+Please note that the live deployment may differ from the local development environment. Ensure you have followed the setup instructions to run the application locally.
